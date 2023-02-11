@@ -9,11 +9,11 @@ from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    ibvs_dir = get_package_share_directory('ros2_chatgpt')
+    my_dir = get_package_share_directory('ros2_chatgpt')
     params_file = LaunchConfiguration(
         'params_file',
         default=os.path.join(
-            ibvs_dir,
+            my_dir,
             'config',
             'chatgpt_params.yaml'))    
 
